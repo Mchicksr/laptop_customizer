@@ -3,6 +3,7 @@ import Total from './Total';
 import Summary from './Summary';
 
 export default function MainSummary(props){
+  console.log("mainS",props)
   return(
 <section className="main__summary">
     <h2>Your cart</h2>

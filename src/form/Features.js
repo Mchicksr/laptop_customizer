@@ -5,13 +5,13 @@ import Options from './Options'
 
 
 export default function Features(props){
-    
+    console.log('props',props)
         return (
           <fieldset className="feature">
             <legend className="feature__name">
               <h3>{props.feature}</h3>
             </legend>
-            {props.options.map((option,idx)=>
+            {Object.keys(props.options).map((option,idx)=>
             <Options
             key={idx}
             name={option.name}

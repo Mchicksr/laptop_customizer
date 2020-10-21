@@ -14,14 +14,16 @@ const USCurrencyFormat = new Intl.NumberFormat('en-US', {
 
 class App extends Component {
   state = {
+   
     selected: {
-      Processor: features.Processor[0],
-      'Operating System': features['Operating System'][0],
-      'Video Card': features['Video Card'][0],
-      Display: features.Display[0]
+      Processor: features.Processor,
+      'Operating System': features['Operating System'],
+      'Video Card': features['Video Card'],
+      Display: features.Display
     }
+    
   };
-
+ 
   updateFeature = (feature, newValue) => {
     const selected = Object.assign({}, this.state.selected);
     selected[feature] = newValue;
@@ -29,11 +31,12 @@ class App extends Component {
       selected
     });
   };
+  
 ///////////////////////////////////
   render() {
     
+    console.log(this.state.selected)
     
-
 //////////////////////////////////////////
     return (
       <div className="App">

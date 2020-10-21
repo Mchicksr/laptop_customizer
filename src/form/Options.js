@@ -1,12 +1,14 @@
 import React from 'react';
 export default function Feature(props) {
+  console.log('yo',props)
+  console.log('look',props.feature)
     return (
         <div className="feature__item">
           <input
             type="radio"
             id={props.name}
             className="feature__option"
-            name={props.Feature}
+            name={props.feature}
             checked={props.name === props.selected[props.feature].name}
             onChange={() => props.handleUpdate(props.feature, props.index)}
           />
