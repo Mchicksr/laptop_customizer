@@ -7,7 +7,7 @@ export default function MainForm(props){
     return (
         <form className="main__form">
             <h2>Customize your laptop</h2>
-            {Object.entries(props.features).map((feature, idx) => 
+            {Object.entries(props.selected).map((feature, idx) => 
                 <Features
                     key={idx}
                     feature={feature[0]}

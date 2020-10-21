@@ -1,7 +1,8 @@
 import React from 'react';
+// import features from '../STORE';
 export default function Feature(props) {
   // console.log('yo',props)
-  // console.log('look',props.feature)
+  console.log('look',props.selected.feature)
     return (
         <div className="feature__item">
           <input
@@ -13,7 +14,7 @@ export default function Feature(props) {
             onChange={() => props.handleUpdate(props.feature, props.index)}
           />
           <label htmlFor={props.name} className="feature__label">
-            {props.name} ({props.dollarFormat.format(props.cost)})
+            {props.name} ({props.dollarFormat.format(props.selected)})
           </label>
         </div>
       );

@@ -10,9 +10,9 @@ export default function MainSummary(props){
     {Object.keys(props.selected).map((feature, idx) => 
       <Summary
       key={idx}
-      feature={feature[0]}
-      option={feature[1].name}
-      cost={feature[1].cost}
+      feature={feature}
+      option={props.selected[feature].name}
+      cost={props.selected[feature].cost}
       dollarFormat={props.dollarFormat}
       />
   )}
