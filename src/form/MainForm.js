@@ -3,6 +3,7 @@ import Features from "./Features";
 // import features from "./features";
 
 export default function MainForm(props){
+    console.log(props)
     return (
         <form className="main__form">
             <h2>Customize your laptop</h2>

@@ -5,7 +5,8 @@ import Options from './Options'
 
 
 export default function Features(props){
-    console.log('props',props)
+     console.log('props',props.feature)
+  
         return (
           <fieldset className="feature">
             <legend className="feature__name">

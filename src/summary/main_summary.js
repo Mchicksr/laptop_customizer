@@ -3,7 +3,7 @@ import Total from './Total';
 import Summary from './Summary';
 
 export default function MainSummary(props){
-  console.log("mainS",props)
+  // console.log("mainS",props)
   return(
 <section className="main__summary">
     <h2>Your cart</h2>
@@ -17,7 +17,7 @@ export default function MainSummary(props){
       />
   )}
   <Total
-  selcted={props.selected}
+  selected={props.selected}
   dollarFormat={props.dollarFormat}
   />
   </section>

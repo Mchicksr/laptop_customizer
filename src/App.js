@@ -5,6 +5,7 @@ import './App.css';
 import Header from "./header/header"
 import MainForm from './form/MainForm'
 import MainSummary from './summary/main_summary';
+
 // This object will allow us to
 // easily convert numbers into US dollar values
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
@@ -35,7 +36,7 @@ class App extends Component {
 ///////////////////////////////////
   render() {
     
-    console.log(this.state.selected)
+    // console.log(this.state.selected)
     
 //////////////////////////////////////////
     return (

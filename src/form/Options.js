@@ -1,7 +1,7 @@
 import React from 'react';
 export default function Feature(props) {
-  console.log('yo',props)
-  console.log('look',props.feature)
+  // console.log('yo',props)
+  // console.log('look',props.feature)
     return (
         <div className="feature__item">
           <input
