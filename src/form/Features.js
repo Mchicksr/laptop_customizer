@@ -1,11 +1,12 @@
 import React from "react";
+import features from "../STORE";
 // import Options from "./Options";
 import Options from './Options'
 
 
 
 export default function Features(props){
-     console.log('props',props.feature)
+    //  console.log('props',props)
   
         return (
           <fieldset className="feature">

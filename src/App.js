@@ -17,17 +17,17 @@ class App extends Component {
   state = {
    
     selected: {
-      Processor: features.Processor,
-      'Operating System': features['Operating System'],
-      'Video Card': features['Video Card'],
-      Display: features.Display
+      Processor: features.Processor[0],
+      'Operating System': features['Operating System'][0],
+      'Video Card': features['Video Card'][0],
+      Display: features.Display[0]
     }
     
   };
  
   updateFeature = (feature, newValue) => {
     const selected = Object.assign({}, this.state.selected);
-    selected[feature] = newValue;
+    selected[feature] = features[newValue][newValue];
     this.setState({
       selected
     });
@@ -36,7 +36,7 @@ class App extends Component {
 ///////////////////////////////////
   render() {
     
-    // console.log(this.state.selected)
+    //  console.log(this.state.selected)
     
 //////////////////////////////////////////
     return (
