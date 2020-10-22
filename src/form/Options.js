@@ -1,5 +1,6 @@
 import React from 'react';
 // import features from '../STORE';
+import features from '../STORE'
 export default function Feature(props) {
   console.log('yo',props)
   // console.log('look',props.selected[props.feature].name)

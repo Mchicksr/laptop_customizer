@@ -4,10 +4,10 @@ import Summary from './Summary';
 
 export default function MainSummary(props){
   // console.log("mainS",props)
-  return(
+  return (
 <section className="main__summary">
     <h2>Your cart</h2>
-    {Object.keys(props.selected).map((feature, idx) => 
+    {Object.entries(props.selected).map((feature, idx) => 
       <Summary
       key={idx}
       feature={feature[0]}

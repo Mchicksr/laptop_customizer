@@ -13,7 +13,7 @@ export default function Features(props){
             <legend className="feature__name">
               <h3>{props.feature}</h3>
             </legend>
-            {Object.keys(props.options).map((option,idx)=>
+            {props.options.map((option,idx)=>
             <Options
             key={idx}
             name={option.name}
